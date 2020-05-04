@@ -114,8 +114,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service
+    libbluetooth_qti \
+    libbt-logClient.so
 
 # Configstore
 PRODUCT_PACKAGES += \
