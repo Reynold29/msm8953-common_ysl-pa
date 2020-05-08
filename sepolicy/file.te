@@ -1,3 +1,8 @@
+allow vendor_init dpmd_data_file:dir create;
+allow vendor_init dpmd_data_file:dir { search setattr };
+allow vendor_init dpmd_data_file:dir write;
+allow vendor_init dpmd_data_file:dir add_name;
+
 # Boot reason
 type proc_boot_reason, fs_type, proc_type;
 

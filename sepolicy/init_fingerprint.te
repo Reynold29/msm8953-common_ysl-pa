@@ -1,0 +1,2 @@
+allow init_fingerprint init_fingerprint:capability { dac_override };
+allow init_fingerprint init_fingerprint:capability { dac_read_search };

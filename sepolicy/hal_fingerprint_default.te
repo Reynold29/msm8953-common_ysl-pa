@@ -1,1 +1,5 @@
 allow hal_fingerprint_default sdcardfs:dir { search };
+allow hal_fingerprint_default firmware_file:dir search;
+allow hal_fingerprint_default vfat:file { read open getattr };
+
+allow hal_fingerprint_default sysfs_leds:file { read open };

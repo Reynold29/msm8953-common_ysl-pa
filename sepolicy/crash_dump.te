@@ -1,2 +1,7 @@
 allow crash_dump qcom_ims_prop:file { open };
 allow crash_dump qcom_ims_prop:file { getattr };
+allow crash_dump camera_prop:file { getattr open };
+
+allow crash_dump device_config_runtime_native_boot_prop:file { open getattr };
+
+allow crash_dump runtime_event_log_tags_file:file getattr;

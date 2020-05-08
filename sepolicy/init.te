@@ -1,1 +1,6 @@
+allow init sysfs:file { open setattr write };
 allow init proc_boot_reason:file r_file_perms;
+allow init sysfs_leds:lnk_file read;
+
+# Proc Files
+allow init proc_vm:file rw_file_perms;
